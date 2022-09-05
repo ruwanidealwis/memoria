@@ -3,8 +3,7 @@
 A virtual multi-media scrapbook generator for treasured memories. Add images, songs, maps and more!
 
 ## 🤩 Contributers 
-Ruwani De Alwis
-Afrah Ali 
+Ruwani De Alwis & Afrah Ali 
 
 ## 🖌️ Features
 - Supports user account creation and management
