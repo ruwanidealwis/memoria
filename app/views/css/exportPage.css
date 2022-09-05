@@ -1,0 +1,173 @@
+#background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2% 15% 0% 5%;
+}
+
+#logout-btn, #create-more-btn {
+  border-radius: 10px;
+  background-color: #e26d5a;
+  padding: 10px 30px;
+  color: white;
+  font-weight: bold;
+  box-shadow: -2px 0 5px #5252522a;
+  border: none;
+  font-family: Raleway;
+  font-size: 1.2rem;
+  height: 45px;;
+}
+
+#bookCover {
+  border-left: 25px solid #1f345b;
+  border-right: 25px solid #1f345b;
+  box-shadow: 8px 8px 10px #07070765;
+  border-radius: 45px;
+  margin: auto;
+  margin-top: 7%;
+  width: 75%;
+  background-color: #eddfd0;
+  height: 80%;
+  display: flex;
+}
+
+#bookLeft {
+  width: 35%;
+  padding: 7% 0% 0% 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+#bookRight {
+  border-left: 2px solid #1f345b;
+  box-shadow: -2px 0 5px #07070765;
+  width: 50%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.image {
+  object-fit: cover;
+}
+.header {
+  font-family: "Augify";
+}
+
+#title {
+  font-size: 3rem;
+  margin: 0px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin: 5px;
+}
+.heading {
+  font-size: 1.5rem;
+  margin: 5px;
+}
+
+#heading-3 {
+  width: 250px;
+}
+
+#music {
+  margin-top: auto;
+  margin-bottom: 10%;
+  position: relative;
+  bottom: 170px;
+  left: 250px;
+  padding: 10px;
+}
+
+#playlist-cover {
+  width: 150px;
+}
+
+#playIcon {
+  position: absolute;
+  top: 25%;
+  margin-left: 18%;
+}
+
+.text {
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+  color: #1f345b;
+}
+
+#bookmark {
+  width: 7%;
+  height: 60%;
+  background-color: #e26d5a;
+  box-shadow: -2px 0 5px #07070765;
+  margin-top: -5%;
+  margin-right: 5%;
+}
+
+#exportedScrapbook {
+  width: 300px;
+}
+
+#right-page-content {
+  display: flex;
+  direction: column;
+  gap: 10px;
+}
+
+#image-1 {
+  width: 300px;
+  height: 300px;
+  margin: 10px 5px;
+}
+
+#image-2 {
+  width: 500px;
+  height: 200px;
+}
+
+#image-3 {
+  width: 220px;
+  height: 300px;
+}
+
+#map {
+  width: 250px;
+  height: 260px;
+}
+
+#scrabookImg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#image-3-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: bottom;
+  gap: 15px;
+  margin: 10px 0px;
+}
+
+#heading-3-map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: bottom;
+  height: 300px;
+  gap: 10px;
+}
+
+.createMore {
+  margin: 3%;
+  margin-left: 80%;
+}

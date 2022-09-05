@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <script>
+        function writeText(font, size, x, y, text) {
+            ctx.beginPath();
+            ctx.font = `bold ${size}px ${font}`;
+            ctx.fontWeight = "bold"
+            ctx.fillStyle = "black";
+            ctx.textAlign = "center";
+            ctx.fillText(text, x, y)
+            ctx.closePath();
+
+        }
+
+        function drawRectange(color, borderColor, start, end, width, height, borderWidth = 1) {
+            ctx.beginPath();
+            ctx.fillStyle = color;
+            ctx.lineWidth = borderWidth;
+            ctx.strokeStyle = borderColor;
+            ctx.rect(start, end, width, height)
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+        function drawSignOne() {
+            canvas = document.getElementById("canvas")
+            ctx = canvas.getContext("2d")
+            drawRectange('white', 'black', 100, 100, 750, 350)
+
+            ctx.beginPath();
+            ctx.rect(130, 130, 690, 290)
+            ctx.lineWidth = 20;
+            ctx.strokeStyle = "black"
+            ctx.fillStyle = "none"
+            ctx.stroke();
+            ctx.closePath();
+
+            writeText('Oswald', 110, 475, 250, '8:30 AM')
+
+            writeText('Oswald', 110, 475, 370, 'TO 5:30 PM')
+
+
+        }
+
+        function drawSignTwo() {
+            canvas = document.getElementById("canvas2")
+            ctx = canvas.getContext("2d")
+            ctx.save();
+            ctx.rotate(Math.PI / 4);
+
+            drawRectange('yellow', 'black', 410, -100, 400, 400)
+
+
+            ctx.beginPath();
+            ctx.rect(440, -70, 340, 340)
+            ctx.lineWidth = 20;
+            ctx.strokeStyle = "black"
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.restore();
+
+            writeText('Oswald', 70, 370, 450, 'SCHOOL')
+
+            writeText('Oswald', 70, 370, 530, 'BUS STOP')
+
+            writeText('Oswald', 70, 370, 610, 'AHEAD')
+
+        }
+
+        function drawSignThree() {
+            canvas = document.getElementById("canvas3")
+            ctx = canvas.getContext("2d")
+            drawRectange('white', 'black', 100, 100, 370, 780)
+            drawRectange('yellow', 'black', 115, 115, 340, 130, 10)
+            drawRectange('white', 'black', 115, 245, 340, 620, 10)
+
+            writeText('Oswald', 100, 285, 220, 'SCHOOL')
+
+            writeText('Oswald', 105, 285, 350, 'SPEED')
+            writeText('Oswald', 105, 285, 450, 'LIMIT')
+
+            writeText('Oswald', 200, 285, 650, '20')
+
+            writeText('Oswald', 70, 285, 750, 'WHEN')
+            writeText('Oswald', 70, 285, 830, 'FLASHING')
+
+
+        }
+
+        function init(event) {
+
+            drawSignOne()
+            drawSignTwo()
+            drawSignThree()
+
+
+
+        }
+
+        window.addEventListener("load", init, false)
+    </script>
+</head>
+
+<body>
+    <h1 style="font-family: Oswald;">Street Signs</h1>
+
+    <canvas id="canvas" width="1000" height="500"></canvas>
+    <canvas id="canvas2" width="1000" height="1000"></canvas>
+    <canvas id="canvas3" width="1000" height="1000"></canvas>
+
+
+</body>
+
+</html>

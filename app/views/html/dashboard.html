@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Create</title>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="button-container">
+      <button id="logout-btn" class="button">Logout</button>
+    </div>
+    <!--    Tabs-->
+    <div id="dashboard">
+      <div class="tab">
+        <button id="scrapbooks-tab" class="active-tab">My Scrapbooks</button>
+        <button id="create-tab" class="inactive-tab">Create</button>
+      </div>
+      <!--Tab views-->
+      <div class="book-content">
+        <!--My Scrapbooks-->
+        <div id="book-container">
+            <div id="new-book-container">
+              <div id="new-book">
+                <div class="book-title">Add new</div>
+              </div>
+              <form id="new-scrapbook-form">
+                <div id="form-container">
+                    <input id="name" placeholder="Scrapbook name" name="name" type="text" />
+                    <button id="submit-form-btn">
+                      <div id="check-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#e26d5a" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.81806 19.779L2.4541 13.415L5.2841 10.585L8.81806 14.129L18.716 4.22104L21.546 7.05104L8.81806 19.779Z" fill="##e26d5a"></path>
+                          </svg>                          
+                      </div>
+                    </button>               
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/dashboard.js"></script>
+    <script type="text/javascript" src="../js/utils.js"></script>
+  </body>
+</html>

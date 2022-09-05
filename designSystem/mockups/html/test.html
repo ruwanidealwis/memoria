@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        td {
+            text-align: center;
+            border: 1px solid;
+        }
+    </style>
+    <script>
+        const t = new Array(2);
+        t[0] = new Array(3);
+        t[1] = new Array(3);
+        t[0][0] = 0
+        t[0][1] = 2
+        t[0][2] = 0
+
+        t[1][0] = 0
+        t[1][1] = 4
+        t[1][2] = 1
+        document.writeln("<table>")
+        document.writeln("<tr>")
+        document.writeln("<td>N/A</td>")
+
+        document.writeln("<td>Col 0</td>")
+        document.writeln("<td>Col 1</td>")
+        document.writeln("<td>Col 2</td>")
+        document.writeln("</tr>")
+
+        for (let i = 0; i < t.length; i++) {
+            document.writeln("<tr>")
+            document.writeln(`<td>Row ${i}</td>`)
+
+            for (let j = 0; j < t[i].length; j++) {
+                console.log("hi")
+                document.writeln(`<td>${t[i][j]}</td>`)
+
+            }
+            document.writeln("</tr>")
+        }
+
+        document.writeln("</table>")
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

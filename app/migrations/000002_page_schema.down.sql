@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS "page_images";
+DROP SEQUENCE IF EXISTS pages_id_seq;

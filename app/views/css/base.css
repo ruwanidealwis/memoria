@@ -1,0 +1,57 @@
+.button {
+  border-radius: 10px;
+  background-color: #e26d5a;
+  padding: 15px 30px;
+  margin: 10px;
+  color: white;
+  box-shadow: -2px 0 5px #07070765;
+  border: none;
+  font-family: Raleway;
+  font-size: 1.2rem;
+}
+
+.card {
+  background-color: #1f345b;
+  border-radius: 10px;
+  padding: 5% 0% 0% 0%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 8px 8px 10px #07070765;
+}
+
+@font-face {
+  font-family: "Augify";
+  src: url("./fonts/Augify.otf");
+}
+
+body {
+  margin: 0;
+  background-color: #dbbea1;
+}
+h1 {
+  font-family: "Augify";
+  font-weight: normal;
+  color: #1f345b;
+  font-size: 130px;
+  padding: 0px;
+  margin: 0px;
+}
+h2 {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #1f345b;
+  padding: 0px;
+  margin: 0px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 250px;
+  left: 50px;
+}
