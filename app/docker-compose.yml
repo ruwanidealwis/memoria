@@ -17,7 +17,7 @@ services:
     image: migrate/migrate
     volumes:
      - ./migrations:/migrations
-    command: ["-path", "/migrations", "-database",  "postgres://postgres:testpassword@postgres:5432/postgres?sslmode=disable", "up"]
+    command: ["-path", "/migrations", "-database",  "postgres://postgres:${DB_PASS}@postgres:5432/postgres?sslmode=disable", "up"]
     depends_on:
       - postgres
   app:
@@ -28,12 +28,12 @@ services:
       - 5000:5000
     environment:
     - DB_USER=postgres
-    - DB_PASS=testpassword
+    - DB_PASS=${DB_PASS}
     - DB_HOST=postgres
     - DB_NAME=postgres
     - PORT=5000
-    - SPOTIFY_CLIENT_SECRET=7ab2324dda904e07a1830f5ad4963680
-    - SPOTIFY_CLIENT_ID=11a49b46832346ae8d29aa2582857720
-    - MAPS_KEY=AIzaSyCzLhQYVButqP7cEq1Xn0VcaghrGovpolE
+    - SPOTIFY_CLIENT_SECRET=${SPOTIFY_CLIENT_SECRET}
+    - SPOTIFY_CLIENT_ID=${SPOTIFY_CLIENT_ID}
+    - MAPS_KEY=${MAPS_KEY}
     depends_on:
       - postgres
